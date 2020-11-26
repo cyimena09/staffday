@@ -1,7 +1,6 @@
 <?php
-var_dump($_POST);
 include("function.php");
-include("../models/insert.php");
+include("../model/insert.php");
 
 
 // Variable de check d'erreure

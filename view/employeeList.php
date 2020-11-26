@@ -1,9 +1,7 @@
 <?php
-include("../models/read.php");
+include("../model/read.php");
 $employees = getEmployees();
-$nb = getNbByActivity();
 ?>
-
 
 <table>
     <tr>
@@ -16,7 +14,6 @@ $nb = getNbByActivity();
         <td>Role</td>
         <td>Activité</td>
         <td>Locomotion</td>
-        <td>Nombre</td>
     </tr>
     <?php foreach ($employees as $employee ){ ?>
         <tr>
@@ -29,8 +26,7 @@ $nb = getNbByActivity();
             <td><?php echo $employee['Role']; ?></td>
             <td><?php echo $employee['Activity']; ?></td>
             <td><?php echo $employee['Locomotion']; ?></td>
-            <td><?php echo $nb; ?></td>
-            <td> <button><a href="">EDIT</a></button> </td>
+            <td><button><a href="">EDIT</a></button> </td>
         </tr>
     <?php }?>
 </table>

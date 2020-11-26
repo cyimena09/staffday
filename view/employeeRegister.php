@@ -1,8 +1,8 @@
 <?php
 if(isset($_GET['erreur'])){echo $_GET['erreur'];}
-include("../models/read.php");
+include("../model/read.php");
 
-$activities = getActivities();
+$activities = getAvailableActivities();
 $locomotions = getLocomotions();
 
 ?>
@@ -49,5 +49,5 @@ $locomotions = getLocomotions();
 
 
 
-    <input type="submit" value="send" />
+    <input type="submit" value="Enregistrer" />
 </form>
