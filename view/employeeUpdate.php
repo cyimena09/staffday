@@ -1,13 +1,14 @@
 <?php
 include("../model/read.php");
-
+$employee = getEmployee($_GET['EmployeeID']);
 $activities = getAvailableActivities();
 $locomotions = getLocomotions();
-
 ?>
 
 
-<form action="../controller/employeeRegister.php" method="post" >
+<h2>Modifier <?php echo  $employee['FirstName'] . " " . $employee['LastName']?></h2>
+
+<form action="../controller/employeeUpdate.php?EmployeeID=<?php echo $_GET['EmployeeID'];?>" method="post" >
     <label for="FirstName">Prénom : </label>
     <input id="FirstName" type="text" name="FirstName"/>
     <br><br>
@@ -50,6 +51,3 @@ $locomotions = getLocomotions();
 
     <input type="submit" value="Enregistrer" />
 </form>
-
-<?php
-if(isset($_GET['erreur'])){echo $_GET['erreur'];}

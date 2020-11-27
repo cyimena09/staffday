@@ -9,21 +9,29 @@ htmlSpecialArray($_POST);
 checkEmptyArray($_POST);
 checkTrimArray($_POST);
 
-$error = 'ok';
 
-//if($error==null){
-//    if(checkNom($_POST['name']) == 'ok' && checkPrenom($_POST['firstName']) == 'ok'){
-//        $error = 'ok';
-//    }
-//}
+if($error==null){
+    if(checkNom($_POST['LastName']) == 'ok' && checkPrenom($_POST['FirstName']) == 'ok' ){
+        if(checkFormatMail($_POST['Mail'])){
+            if(checkNumber($_POST['PostalCode'])){
+                $error = "ok";
+            }
+            else{
+                $error = "Le code postal est invalide ";
+            }
+        }
+        else{
+            $error = "L'email n'est pas correct";
+        }
+    }
+}
 
 //REDIRECTIONS
 if($error == 'ok'){
-    echo 'ouiiiiiiiiii';
     insertEmployee($_POST);
     header('Location: ../view/confirmRegister.php');
 }else{
-    header('Location: ../view/registerStudent.php?erreur='.$error);
+    header('Location: ../view/employeeRegister.php?erreur='.$error);
 }
 
 
@@ -31,6 +39,7 @@ if($error == 'ok'){
 function checkNom($nom){
     return !checkNumber($nom) ? 'ok' : $GLOBALS['error'] = 'nom : chiffre !';
 }
+
 function checkPrenom($prenom){
     return !checkNumber($prenom) ? 'ok' : $GLOBALS['error'] = 'prenom : chiffre !';
 }

@@ -3,8 +3,6 @@
 function insertEmployee($post)
 {
     include('connection.php');
-    include("../model/read.php");
-    var_dump($post);
     $insertedId = null;
     $query = "INSERT INTO employees (FirstName, LastName, Mail, PostalCode, Department, Supper, Role, LocomotionID)
                 VALUES (:FirstName, :LastName, :Mail, :PostalCode, :Department, :Supper, :Role, :LocomotionID)";

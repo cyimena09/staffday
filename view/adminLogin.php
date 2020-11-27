@@ -1,4 +1,4 @@
-<form action="../controller/loginAdmin.php" method="post">
+<form action="../controller/adminLogin.php" method="post">
 
     <label for="Login">Login</label>
     <input type="text" id="Login" name="Login">

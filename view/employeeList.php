@@ -1,5 +1,4 @@
 <?php
-include("../model/read.php");
 $employees = getEmployees();
 ?>
 
@@ -26,7 +25,10 @@ $employees = getEmployees();
             <td><?php echo $employee['Role']; ?></td>
             <td><?php echo $employee['Activity']; ?></td>
             <td><?php echo $employee['Locomotion']; ?></td>
-            <td><button><a href="">EDIT</a></button> </td>
+            <td>
+                <button><a href="employeeUpdate.php?EmployeeID=<?php echo $employee['EmployeeID'];?>">Modifier</a></button>
+                <button><a href="../controller/employeeDelete.php?EmployeeID=<?php echo $employee['EmployeeID'];?>">Supprimer</a></button>
+            </td>
         </tr>
     <?php }?>
 </table>

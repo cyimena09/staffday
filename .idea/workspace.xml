@@ -11,16 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e746a9-851c-489d-8456-5e6b457f0869" name="Default Changelist" comment="dev and connect to database">
-      <change afterPath="$PROJECT_DIR$/controller/loginAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/adminOk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/loginAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/employeeDelete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/employeeUpdate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/activityList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/employeeUpdate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/employeeRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/employeeRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/loginAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/adminLogin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/insert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/confirmRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/confirmRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/adminOk.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminSpace.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/employeeList.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/employeeList.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/employeeRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/employeeRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/loginAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminLogin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +69,9 @@
       <updated>1606390309861</updated>
       <workItem from="1606390312320" duration="633000" />
       <workItem from="1606391113410" duration="10157000" />
-      <workItem from="1606402871876" duration="15840000" />
+      <workItem from="1606402871876" duration="16582000" />
+      <workItem from="1606461624132" duration="341000" />
+      <workItem from="1606462115134" duration="11761000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1606390405980</created>
@@ -86,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606390846365</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dev and connect to database">
+      <created>1606421252888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606421252888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,10 +129,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="163" key="#PHP/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606392775016" />
-    <state x="866" y="452" key="NewPhpFileDialog" timestamp="1606416837915">
+    <state x="866" y="452" key="NewPhpFileDialog" timestamp="1606468181719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="866" y="452" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606416837915" />
+    <state x="866" y="452" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606468181719" />
     <state x="623" y="260" key="Vcs.Push.Dialog.v2" timestamp="1606390856458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
