@@ -10,6 +10,5 @@ $activities = getActivitiesView();
 <?php
 include("../view/employeeList.php");
 include("../view/activityList.php");
-
 ?>
 

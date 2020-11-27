@@ -10,23 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30e746a9-851c-489d-8456-5e6b457f0869" name="Default Changelist" comment="dev and connect to database">
-      <change afterPath="$PROJECT_DIR$/controller/employeeDelete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/employeeUpdate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/activityList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/employeeUpdate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
+    <list default="true" id="30e746a9-851c-489d-8456-5e6b457f0869" name="Default Changelist" comment="CRUD employees">
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ressources/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/employeeRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/employeeRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/loginAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/adminLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/adminOk.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminSpace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/employeeList.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/employeeList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/activityList.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/activityList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/adminLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/adminSpace.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminSpace.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/employeeRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/employeeRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/loginAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +52,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cyime\OneDrive\Bureau\IFOSUP\Bac 2\Projet de développement web\StaffDay\staffday\vendor" />
+      <recent name="C:\Users\cyime\OneDrive\Bureau\IFOSUP\Bac 2\Projet de développement web\StaffDay\staffday\ressources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +80,8 @@
       <workItem from="1606391113410" duration="10157000" />
       <workItem from="1606402871876" duration="16582000" />
       <workItem from="1606461624132" duration="341000" />
-      <workItem from="1606462115134" duration="11761000" />
+      <workItem from="1606462115134" duration="12224000" />
+      <workItem from="1606474604012" duration="10089000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1606390405980</created>
@@ -101,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606421252888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CRUD employees">
+      <created>1606474288120</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606474288120</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,21 +139,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="dev and connect to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="dev and connect to database" />
+    <MESSAGE value="CRUD employees" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD employees" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="163" key="#PHP" timestamp="1606392775016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="163" key="#PHP/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606392775016" />
-    <state x="866" y="452" key="NewPhpFileDialog" timestamp="1606468181719">
+    <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1606478981085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="866" y="452" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606468181719" />
-    <state x="623" y="260" key="Vcs.Push.Dialog.v2" timestamp="1606390856458">
+    <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606478981085" />
+    <state x="866" y="452" key="NewPhpFileDialog" timestamp="1606480602282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606390856458" />
+    <state x="866" y="452" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606480602282" />
+    <state x="623" y="260" key="Vcs.Push.Dialog.v2" timestamp="1606474311723">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606474311723" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606399551486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
