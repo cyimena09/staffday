@@ -33,7 +33,7 @@ $locomotions = getLocomotions();
             <div class="input-group-prepend">
                 <span class="input-group-text"><span class="fas fa-user"></span></span>
             </div>
-            <input class="form-control" type="text" placeholder="Email" name="Login">
+            <input class="form-control" type="text" placeholder="Login" name="Login">
         </div>
 
         <div class="input-group mt-5 mb-4">
@@ -49,6 +49,7 @@ $locomotions = getLocomotions();
 </div>
 
 
-
+</body>
+</html>
 
 

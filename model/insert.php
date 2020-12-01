@@ -4,8 +4,8 @@ function insertEmployee($post)
 {
     include('connection.php');
     $insertedId = null;
-    $query = "INSERT INTO employees (FirstName, LastName, Mail, PostalCode, Department, Supper, Role, LocomotionID)
-                VALUES (:FirstName, :LastName, :Mail, :PostalCode, :Department, :Supper, :Role, :LocomotionID)";
+    $query = "INSERT INTO employees (FirstName, LastName, Mail, PostalCode, Department, Supper, LocomotionID)
+                VALUES (:FirstName, :LastName, :Mail, :PostalCode, :Department, :Supper, :LocomotionID)";
     $query_params = array(
         ':FirstName' => $post['FirstName'],
         ':LastName' => $post['LastName'],
@@ -13,7 +13,6 @@ function insertEmployee($post)
         ':PostalCode' => $post['PostalCode'],
         ':Department' => $post['Department'],
         ':Supper' => $post['Supper'],
-        ':Role' => $post['Role'],
         ':LocomotionID' => $post['Locomotion']);
     try {
         $stmt = $db->prepare($query);
@@ -44,10 +43,10 @@ function insertEmployeeActivities($employeeID, $Activity)
 
 function insertAdmin($post){
     include('connection.php');
-    $query = "INSERT INTO admin (login,	email,	mdp) VALUES (:login,	:email,	:mdp)";
-    $query_params = array( ':login' => $post['login'],
-        ':email' => $post['email'],
-        ':mdp' => $post['mdp']);
+    $query = "INSERT INTO admins (Login, Password) VALUES (:Login, :Password)";
+    $query_params = array(
+        ':Login' => $post['Login'],
+        ':Password' => $post['Password']);
     try
     {
         $stmt = $db->prepare($query);

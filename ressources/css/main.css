@@ -13,6 +13,11 @@ header{
    background-color: rgb(11, 54, 102);
 }
 
+nav{
+   color: white;
+   background-color: rgb(169, 192, 217);
+}
+
 
 h1{
    text-align: center;
@@ -50,6 +55,8 @@ p{
    justify-content: center;
    align-items: center;
 }
+
+
 
 
 .actions {
@@ -102,4 +109,10 @@ form span{
 .error{
    color: red;
    margin-bottom: 200px;
+}
+
+
+#content-admin-space{
+   width: 800px;
+   border: solid red;
 }

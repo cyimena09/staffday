@@ -12,7 +12,7 @@ $passDB = $infos['Password'];
 $loginDB = $infos['Login'];
 
 if (checkPost($_POST['Login'], $_POST['Password'], $passDB, $loginDB) == 'ok') {
-    header("Location: ../view/activityList.php");
+    header("Location: ../view/adminSpace.php");
 } else {
     header("Location: ../view/adminLogin.php");
 }

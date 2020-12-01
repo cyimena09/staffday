@@ -29,7 +29,7 @@ if($error==null){
 //REDIRECTIONS
 if($error == 'ok'){
     insertEmployee($_POST);
-    header('Location: ../view/confirmRegister.php');
+    header('Location: ../view/confirmEmployeeRegister.php');
 }else{
     header('Location: ../view/employeeRegister.php?erreur='.$error);
 }

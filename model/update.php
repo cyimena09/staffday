@@ -5,7 +5,7 @@ function updateEmployee($EmployeeID,$post)
     include('connection.php');
     $insertedId = null;
     $query = "UPDATE employees 
-                SET FirstName = :FirstName, LastName =:LastName, Mail = :Mail, PostalCode = :PostalCode, Department = :Department, Supper = :Supper, Role = :Role, LocomotionID =  :LocomotionID
+                SET FirstName = :FirstName, LastName =:LastName, Mail = :Mail, PostalCode = :PostalCode, Department = :Department, Supper = :Supper, LocomotionID =  :LocomotionID
                 WHERE EmployeeID = :EmployeeID";
     $query_params = array(
         ':EmployeeID' => $EmployeeID,
@@ -15,7 +15,6 @@ function updateEmployee($EmployeeID,$post)
         ':PostalCode' => $post['PostalCode'],
         ':Department' => $post['Department'],
         ':Supper' => $post['Supper'],
-        ':Role' => $post['Role'],
         ':LocomotionID' => $post['Locomotion']);
     try {
         $stmt = $db->prepare($query);

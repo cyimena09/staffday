@@ -55,16 +55,6 @@ $locomotions = getLocomotions();
             </div>
 
             <div class="form-group">
-                <label for="Supper">Souper</label>
-                <input class="form-control" id="Supper" type="text" name="Supper">
-            </div>
-
-            <div class="form-group">
-                <label for="Role">Role</label>
-                <input class="form-control" id="Role" type="text" name="Role">
-            </div>
-
-            <div class="form-group">
                 <label>Moyen de locomotion</label>
                 <select class="form-control" name="Locomotion">
                     <?php foreach ($locomotions as $locomotion ){ ?>
@@ -72,7 +62,6 @@ $locomotions = getLocomotions();
                     <?php }?>
                 </select>
             </div>
-
 
             <div class="form-group">
                 <label>Choisissez votre activité</label>
@@ -83,7 +72,20 @@ $locomotions = getLocomotions();
                 </select>
             </div>
 
-            <input class="btn btn-success" type="submit" value="Enregistrer" />
+            <div class="form-check mt-4">
+                <input class="form-check-input" type="radio" name="Supper" id="participe" value="non" checked>
+                <label class="form-check-label" for="participe">
+                    Je ne participe pas au souper
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Supper" id="notparticipe" value="oui">
+                <label class="form-check-label" for="notparticipe">
+                    Je participe au souper
+                </label>
+            </div>
+
+            <input class="btn btn-success mt-5" type="submit" value="Enregistrer" />
         </form>
 
         <div class="error"><?php if(isset($_GET['erreur'])){echo $_GET['erreur'];} ?></div>

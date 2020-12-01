@@ -3,7 +3,7 @@
 
 function getEmployees(){
     include("connection.php");
-    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, e.Role, locomotions.Locomotion, Activities.Activity
+    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, locomotions.Locomotion, Activities.Activity
                 FROM employees AS e
                 INNER JOIN locomotions ON e.LocomotionID = locomotions.LocomotionID
                 INNER JOIN employees_activities ON e.employeeID = employees_activities.EmployeeID
@@ -22,7 +22,7 @@ function getEmployees(){
 
 function getEmployee($EmployeeID){
     include("connection.php");
-    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, e.Role, locomotions.Locomotion, Activities.Activity
+    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, locomotions.Locomotion, Activities.Activity
                 FROM employees AS e
                 INNER JOIN locomotions ON e.LocomotionID = locomotions.LocomotionID
                 INNER JOIN employees_activities ON e.employeeID = employees_activities.EmployeeID
@@ -128,8 +128,8 @@ function getLocomotions(){
 function getAdmin($login){
     include("connection.php");
     $query = "SELECT Login, Password
-          FROM admins
-          WHERE Login = :login";
+                FROM admins
+                WHERE Login = :login";
     $query_params = array( ':login' => $login );
     try{
         $stmt = $db->prepare($query);

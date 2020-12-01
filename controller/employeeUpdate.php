@@ -3,6 +3,8 @@ include("function.php");
 include("../model/update.php");
 
 
+
+
 // Variable de check d'erreure
 $error = null;
 htmlSpecialArray($_POST);
@@ -11,15 +13,9 @@ checkTrimArray($_POST);
 
 $error = 'ok';
 
-//if($error==null){
-//    if(checkNom($_POST['name']) == 'ok' && checkPrenom($_POST['firstName']) == 'ok'){
-//        $error = 'ok';
-//    }
-//}
 
 //REDIRECTIONS
 if($error == 'ok'){
-    echo 'ouiiiiiiiiii';
     updateEmployee($_GET['EmployeeID'], $_POST);
 
     header('Location: ../view/adminSpace.php');
