@@ -10,22 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30e746a9-851c-489d-8456-5e6b457f0869" name="Default Changelist" comment="add admin register and remove employee role">
-      <change afterPath="$PROJECT_DIR$/view/employeeExist.php" afterDir="false" />
+    <list default="true" id="30e746a9-851c-489d-8456-5e6b457f0869" name="Default Changelist" comment="hash password and check if employee is unique">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/adminLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/adminLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/adminRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/adminRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/employeeDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/employeeDelete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/employeeRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/employeeRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/employeeUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/employeeUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/insert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/adminLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/adminRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/adminSpace.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminSpace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +80,7 @@
       <workItem from="1606836907202" duration="973000" />
       <workItem from="1607261111610" duration="7718000" />
       <workItem from="1607279147576" duration="12206000" />
-      <workItem from="1607333689756" duration="278000" />
+      <workItem from="1607333689756" duration="1301000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1606390405980</created>
@@ -144,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606837021187</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="hash password and check if employee is unique">
+      <created>1607334085778</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607334085778</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +162,8 @@
     <MESSAGE value="CRUD employees" />
     <MESSAGE value="add css" />
     <MESSAGE value="add admin register and remove employee role" />
-    <option name="LAST_COMMIT_MESSAGE" value="add admin register and remove employee role" />
+    <MESSAGE value="hash password and check if employee is unique" />
+    <option name="LAST_COMMIT_MESSAGE" value="hash password and check if employee is unique" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="163" key="#PHP" timestamp="1606392775016">
@@ -203,11 +198,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="866" y="452" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607268504281" />
-    <state x="623" y="260" key="Vcs.Push.Dialog.v2" timestamp="1606838866828">
+    <state x="623" y="260" key="Vcs.Push.Dialog.v2" timestamp="1607334096552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606838866828" />
-    <state x="623" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606486102112" />
+    <state x="623" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607334096552" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606399551486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

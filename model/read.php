@@ -76,6 +76,7 @@ function getAllActivities(){
 }
 
 function getAvailableActivities(){
+    //fonction permettant de vérifier si le nombre max d'activité à été dépassé ou non
     $totals = getNbByActivity();
     $activities = getAllActivities();
     $newArray = array();
@@ -85,7 +86,8 @@ function getAvailableActivities(){
         for ($j = 0; $j < sizeof($totals); $j++ ){
             if($activities[$i]['ActivityID'] == $totals[$j]['ActivityID']){
                 $cpt = 1;
-                if($totals[$j]['total'] < $activities[$i]['MaxParticipant']){
+                // le nombre de participant max n' est négatif que si l'employee ne participe pas
+                if($totals[$j]['total'] < $activities[$i]['MaxParticipant'] or $activities[$i]['MaxParticipant'] < 0){
                  array_push($newArray, $activities[$i]);
                 }
             }
