@@ -3,9 +3,10 @@
 function insertEmployee($post)
 {
     include('connection.php');
+
     $insertedId = null;
     $query = "INSERT INTO employees (FirstName, LastName, Mail, PostalCode, Department, Supper, LocomotionID)
-                VALUES (:FirstName, :LastName, :Mail, :PostalCode, :Department, :Supper, :LocomotionID)";
+            VALUES (:FirstName, :LastName, :Mail, :PostalCode, :Department, :Supper, :LocomotionID)";
     $query_params = array(
         ':FirstName' => $post['FirstName'],
         ':LastName' => $post['LastName'],
@@ -23,6 +24,8 @@ function insertEmployee($post)
         die("Failed query : " . $ex->getMessage());
     }
     insertEmployeeActivities($insertedId, $post['Activity']);
+
+
 }
 
 function insertEmployeeActivities($employeeID, $Activity)
@@ -43,6 +46,7 @@ function insertEmployeeActivities($employeeID, $Activity)
 
 function insertAdmin($post){
     include('connection.php');
+    $post['Password'] = password_hash($post['Password'], PASSWORD_DEFAULT);
     $query = "INSERT INTO admins (Login, Password) VALUES (:Login, :Password)";
     $query_params = array(
         ':Login' => $post['Login'],

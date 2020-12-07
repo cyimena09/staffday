@@ -3,8 +3,6 @@ include("function.php");
 include("../model/update.php");
 
 
-
-
 // Variable de check d'erreure
 $error = null;
 htmlSpecialArray($_POST);

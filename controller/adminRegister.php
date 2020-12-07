@@ -27,3 +27,4 @@ if($error == 'ok'){
     header('Location: ../view/adminRegister.php?erreur='.$error);
 }
 
+

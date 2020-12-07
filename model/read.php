@@ -39,6 +39,27 @@ function getEmployee($EmployeeID){
     return $result[0];
 }
 
+function getEmployeeByFirstNameLastName($FirstName, $LastName){
+    include("connection.php");
+    $query = "SELECT FirstName, LastName
+                    FROM employees
+                    WHERE FirstName = :FirstName AND LastName = :LastName";
+    $query_params = array(
+        ':FirstName' => $FirstName,
+        ':LastName' => $LastName
+    );
+    try{
+        $stmt = $db->prepare($query);
+        $result = $stmt->execute($query_params);
+    }
+    catch(PDOException $ex){
+        die("Failed query : " . $ex->getMessage());
+    }
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result[0];
+}
+
+
 function getAllActivities(){
     include("connection.php");
     $query = "SELECT ActivityID, Activity, MaxParticipant FROM activities";
@@ -130,7 +151,9 @@ function getAdmin($login){
     $query = "SELECT Login, Password
                 FROM admins
                 WHERE Login = :login";
-    $query_params = array( ':login' => $login );
+    $query_params = array(
+        ':login' => $login,
+    );
     try{
         $stmt = $db->prepare($query);
         $result = $stmt->execute($query_params);

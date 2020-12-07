@@ -31,12 +31,12 @@ include("header.php");
 
         <div class="form-group">
             <label for="Password">Mot de passe</label>
-            <input class="form-control" id="Password" type="text" placeholder="Attribuer un mot de passe" name="Password"/>
+            <input class="form-control" id="Password" type="password" placeholder="Attribuer un mot de passe" name="Password"/>
         </div>
 
         <div class="form-group">
             <label for="ConfirmPassword">Confirmer le mot de passe</label>
-            <input class="form-control" id="ConfirmPassword" type="text" placeholder="Confirmer le mot de passe" name="ConfirmPassword">
+            <input class="form-control" id="ConfirmPassword" type="password" placeholder="Confirmer le mot de passe" name="ConfirmPassword">
         </div>
 
         <input class="btn btn-success" type="submit" value="Enregistrer" />
@@ -48,3 +48,35 @@ include("header.php");
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,7 @@ function checkNumber($elem){
 function checkLettre($elem){
     return (preg_match('#[a-z]#', $elem) || preg_match('#[A-Z]#', $elem)) ? true : false;
 }
+
 function checkUpcase($elem){
     return (preg_match('#[A-Z]#', $elem)) ? true : false;
 }
