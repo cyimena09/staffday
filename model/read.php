@@ -3,7 +3,7 @@
 
 function getEmployees(){
     include("connection.php");
-    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, e.Role, locomotions.Locomotion, Activities.Activity
+    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, locomotions.Locomotion, Activities.Activity
                 FROM employees AS e
                 INNER JOIN locomotions ON e.LocomotionID = locomotions.LocomotionID
                 INNER JOIN employees_activities ON e.employeeID = employees_activities.EmployeeID
@@ -22,7 +22,7 @@ function getEmployees(){
 
 function getEmployee($EmployeeID){
     include("connection.php");
-    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, e.Role, locomotions.Locomotion, Activities.Activity
+    $query = "SELECT e.EmployeeID, e.FirstName, e.LastName, e.Mail, e.PostalCode, e.Department, e.Supper, locomotions.Locomotion, Activities.Activity
                 FROM employees AS e
                 INNER JOIN locomotions ON e.LocomotionID = locomotions.LocomotionID
                 INNER JOIN employees_activities ON e.employeeID = employees_activities.EmployeeID
@@ -38,6 +38,27 @@ function getEmployee($EmployeeID){
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return $result[0];
 }
+
+function getEmployeeByFirstNameLastName($FirstName, $LastName){
+    include("connection.php");
+    $query = "SELECT FirstName, LastName
+                    FROM employees
+                    WHERE FirstName = :FirstName AND LastName = :LastName";
+    $query_params = array(
+        ':FirstName' => $FirstName,
+        ':LastName' => $LastName
+    );
+    try{
+        $stmt = $db->prepare($query);
+        $result = $stmt->execute($query_params);
+    }
+    catch(PDOException $ex){
+        die("Failed query : " . $ex->getMessage());
+    }
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result[0];
+}
+
 
 function getAllActivities(){
     include("connection.php");
@@ -128,9 +149,11 @@ function getLocomotions(){
 function getAdmin($login){
     include("connection.php");
     $query = "SELECT Login, Password
-          FROM admins
-          WHERE Login = :login";
-    $query_params = array( ':login' => $login );
+                FROM admins
+                WHERE Login = :login";
+    $query_params = array(
+        ':login' => $login,
+    );
     try{
         $stmt = $db->prepare($query);
         $result = $stmt->execute($query_params);
