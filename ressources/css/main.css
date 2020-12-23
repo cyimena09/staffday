@@ -18,16 +18,16 @@ nav{
    background-color: rgb(169, 192, 217);
 }
 
-
 h1{
-   text-align: center;
-   font-family: 'Cairo', sans-serif;
-   font-size: 48px;
-   letter-spacing: 3px;
-   color: #d3b51a;
-   font-weight: bold;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #d3b51a;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+    padding: 8px 0;
 }
-
 
 p, h2{
    text-align: center;
@@ -48,7 +48,6 @@ p{
    padding-top: 15px;
 }
 
-
 .content{
    display: flex;
    flex-direction: column;
@@ -56,16 +55,12 @@ p{
    align-items: center;
 }
 
-
-
-
 .actions {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    width: 500px;
    margin-top: 100px;
-
 }
 
 .action {
@@ -81,6 +76,7 @@ p{
    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
    transition: 0.3s;
 }
+
 span{
    display: flex;
    justify-content: center;
@@ -88,15 +84,14 @@ span{
    color: rgb(61, 91, 118);
 }
 
-
 .action:hover {
    text-decoration: none;
    box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .action:hover span {
    color: rgb(109, 159, 203);
 }
-
 
 form{
    width: 500px;
@@ -111,8 +106,6 @@ form span{
    margin-bottom: 200px;
 }
 
-
 #content-admin-space{
    width: 800px;
-   border: solid red;
 }

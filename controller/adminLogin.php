@@ -15,7 +15,6 @@ if (!is_null($infos)) {
     $passDB = $infos['Password'];
     checkPost($_POST['Login'],$_POST['Password'], $login, $passDB);
 
-
     if($error == 'ok'){
         header("Location: ../view/adminSpace.php");
     }
@@ -48,6 +47,3 @@ function checkPost($login, $password, $loginDB, $passDB){
     $GLOBALS['error'] = 'login ou mdp pas present';
   }
 }
-
-
-
