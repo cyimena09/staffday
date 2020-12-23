@@ -10,20 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30e746a9-851c-489d-8456-5e6b457f0869" name="Default Changelist" comment="hash password and check if employee is unique">
-      <change afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
+    <list default="true" id="30e746a9-851c-489d-8456-5e6b457f0869" name="Default Changelist" comment="reorganization and start email confirmation">
+      <change afterPath="$PROJECT_DIR$/controller/messaging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/writeEmail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/adminLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/adminLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ressources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ressources/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/adminLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/adminRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/adminSpace.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adminSpace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/employeeList.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/employeeList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/employeeRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/employeeRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/employeeUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/employeeUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +85,7 @@
       <workItem from="1607333689756" duration="2144000" />
       <workItem from="1607361205277" duration="1805000" />
       <workItem from="1608639669488" duration="702000" />
-      <workItem from="1608727390781" duration="3862000" />
+      <workItem from="1608727390781" duration="7717000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1606390405980</created>
@@ -160,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607335093342</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="reorganization and start email confirmation">
+      <created>1608731850528</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608731850528</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +182,8 @@
     <MESSAGE value="add css" />
     <MESSAGE value="add admin register and remove employee role" />
     <MESSAGE value="hash password and check if employee is unique" />
-    <option name="LAST_COMMIT_MESSAGE" value="hash password and check if employee is unique" />
+    <MESSAGE value="reorganization and start email confirmation" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganization and start email confirmation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="163" key="#PHP" timestamp="1606392775016">
@@ -216,10 +214,14 @@
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608729371874" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606486604964" />
-    <state x="866" y="452" key="NewPhpFileDialog" timestamp="1608728296267">
+    <state x="589" y="243" key="NewPhpClassDialog" timestamp="1608731906188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="866" y="452" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608728296267" />
+    <state x="589" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608731906188" />
+    <state x="866" y="452" key="NewPhpFileDialog" timestamp="1608732221868">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="866" y="452" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608732221868" />
     <state x="623" y="260" key="Vcs.Push.Dialog.v2" timestamp="1607335098575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
